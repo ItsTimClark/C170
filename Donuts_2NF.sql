@@ -1,0 +1,8 @@
+CREATE TABLE Donuts_2NF
+(
+	DonutID INT NOT NULL, 
+	DonutName CHAR(75) NOT NULL, 
+	Description CHAR(225) NULL, 
+	UnitPrice DECIMAL(2,2) NULL,
+    CONSTRAINT PK_Donuts_2NF PRIMARY KEY (DonutID)
+);

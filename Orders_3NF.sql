@@ -1,0 +1,9 @@
+CREATE TABLE Orders_3NF
+(
+	OrderID INT NOT NULL AUTO_INCREMENT,
+	OrderDate DATE NOT NULL,
+	CustomerID INT NULL,
+	SpecialHandlingNotes CHAR(255) NULL,
+	CONSTRAINT PK_Orders_3NF PRIMARY KEY (OrderID),
+    CONSTRAINT FK_Orders_Customers_3NF FOREIGN KEY (CustomerID) REFERENCES Customers_3NF(CustomerID) 
+);
